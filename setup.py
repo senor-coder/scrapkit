@@ -1,9 +1,9 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='scrapkit',
-    version='0.1',
-    packages= ['scrapkit'],
+    version='0.1.1',
+    packages=find_packages(),
     author='Ashwin',
     author_email='surana.an@gmail.com',
     description='A utility library for scraping.',
