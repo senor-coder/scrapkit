@@ -32,7 +32,6 @@ class SessionDestroyException(Exception):
 
 class CrawleraSession():
     def __init__(self, api_key, user_agent=None, cert='crawlera-ca.crt', debug=False, max_tries=3):
-        requests.Session.__init__(self)
         self.api_key = api_key
         self.user_agent = user_agent
         self.cert = cert

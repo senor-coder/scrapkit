@@ -1,3 +1,6 @@
+from functools import wraps
+
+
 def debug(http_method_func):
     @wraps(http_method_func)
     def log(instance, *args, **kwargs):
@@ -8,6 +11,7 @@ def debug(http_method_func):
         return response
 
     return log
+
 
 from browser import *
 from crawlera import *
