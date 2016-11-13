@@ -82,6 +82,7 @@ class ProxySession(Session):
                     response = super(ProxySession, self).get(url, **kwargs)
                 else:
                     return response
+        print response.text
         return response
 
     @debug

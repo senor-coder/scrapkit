@@ -21,5 +21,6 @@ def debug(http_method_func):
                 html.write(response.text.encode('UTF-8'))
                 INCR += 1
             return response
+        return response
 
     return log
