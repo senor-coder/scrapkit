@@ -7,5 +7,4 @@ proxies = {
 
 session = ProxySession(proxies=proxies)
 response = session.get('http://httpbin.org/ip')
-
 print 'FINAL: ', response.status_code
